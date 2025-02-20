@@ -1,0 +1,105 @@
+@use '../../styles/mixins.scss' as *;
+
+.navbar {
+  padding-block: 0.125rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    width: 130px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: flex-start;
+      position: absolute;
+      top: 10%;
+      background-color: var(--bg-secondary);
+      width: 100%;
+      display: none;
+      z-index: 10;
+    }
+
+    a {
+      color: var(--white);
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      font-family: IBM Plex Sans;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    a:hover {
+      color: var(--bg-secondary);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include respond(tablet) {
+      display: inline-block;
+      font-size: 2rem;
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.btn,
+.register {
+  transition: all 0.3s ease;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--bg-button);
+  padding: 11px 24px;
+  border-radius: 3px;
+  border: 1.5px solid #57e1ff;
+}
+
+.btn {
+  box-shadow: 0px 0px 4px 0px #57e1ff;
+  background: #57e1ff33;
+}
+
+.btn:hover {
+  background: #57e1ff;
+  color: #030718;
+}
+
+.register {
+  background: #57e1ff;
+  color: #030718;
+}
+
+.register:hover {
+  border: 1.5px solid #57e1ff;
+  background: #57e1ff33;
+  color: var(--bg-button);
+}
+
+ul.show {
+  display: flex;
+}
