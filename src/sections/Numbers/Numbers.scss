@@ -1,0 +1,65 @@
+@use '../../styles/mixins.scss' as *;
+
+.numbers__container {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  gap: 156px;
+  padding-block: 65px;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.numbers__data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.numbers__item-title {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-black);
+}
+
+.numbers__item-info {
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  color: var(--bg-secondary);
+
+  @include respond(phone) {
+    font-size: 35px;
+    line-height: 38.5px;
+  }
+}
+
+.numbers__title h1 {
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+  color: var(--color-black);
+  text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.numbers__title h5 {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-black);
+}

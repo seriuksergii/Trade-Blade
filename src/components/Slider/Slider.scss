@@ -1,0 +1,124 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.slider-card {
+  position: relative;
+  background: #6a54ff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(86, 75, 75, 0.1);
+  text-align: start;
+  transition: transform 0.3s ease-in-out;
+  clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 165px;
+  width: 160px;
+  height: 160px;
+  z-index: 1;
+}
+
+.card_title {
+  position: relative;
+  z-index: 2;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-white);
+}
+
+.card_description {
+  position: relative;
+  z-index: 2;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: start;
+  color: var(--color-secondary);
+  padding-bottom: 45px;
+}
+
+.card_text {
+  position: relative;
+  z-index: 2;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+
+.card_percent {
+  position: relative;
+  z-index: 2;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: var(--color-lg);
+  padding-bottom: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.card_data {
+  color: var(--color-secondary);
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+  width: 9px;
+  height: 16px;
+}
+
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 6px;
+  background-color: #434f70;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #6073a1;
+  transition: width 0.3s ease-in-out;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  margin-right: 20px;
+}

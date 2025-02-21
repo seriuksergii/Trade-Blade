@@ -1,0 +1,38 @@
+@use '../../styles/mixins.scss' as *;
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  background-color: var(--bg-input);
+  border-radius: 4px;
+
+  &.hero-input {
+    background-color: var(--bg-input);
+  }
+
+  &.aboutus-input {
+    background-color: #4a3bb3;
+  }
+
+  @include respond(phone) {
+    width: 400px;
+  }
+
+  .input-field {
+    flex: 1;
+    background: transparent;
+    padding: 25px 16px;
+    border: none;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    &::placeholder {
+      font-family: IBM Plex Sans;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-white);
+    }
+  }
+}

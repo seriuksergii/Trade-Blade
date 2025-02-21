@@ -1,0 +1,42 @@
+@use '../../styles/mixins.scss' as *;
+
+.transactions {
+  position: relative;
+  padding-bottom: 118px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    font-family: IBM Plex Sans;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    text-transform: uppercase;
+    padding-top: 96px;
+  }
+
+  &__online {
+    display: flex;
+    gap: 5px;
+  }
+
+  .online {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-lg);
+  }
+
+  &__b-line {
+    position: absolute;
+    left: 409px;
+    bottom: 0;
+
+    @include respond(phone) {
+      width: 60%;
+    }
+  }
+}
