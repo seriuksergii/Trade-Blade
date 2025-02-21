@@ -8,29 +8,18 @@ To run this project locally:
 
 1.	Clone the Repository:
 
-         https://github.com/seriuksergii/react-todo.git
+         https://github.com/seriuksergii/Trade-Blade.git
 
-2.	Navigate to the project directory:
 
-         cd react-todo
-
-3.	Install dependencies:
+2.	Install dependencies:
 
           npm install
 
-4.	Start the application:
+3.	Start the application:
  
-          npm start
+          npm run dev
 
 
-
-Technologies Used:
-
-•	React
-
-•	TypeScript
-
-•	SCSS
 
 
 
