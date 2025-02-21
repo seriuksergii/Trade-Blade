@@ -1,6 +1,6 @@
 Check out the live demo
 
-[Demo]([trade-blade-chi.vercel.app](https://trade-blade-eqanyj2xn-seriuksergiis-projects.vercel.app))
+[Demo](https://trade-blade-eqanyj2xn-seriuksergiis-projects.vercel.app)
 
 Installation
 
