@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 .aboutus__right {

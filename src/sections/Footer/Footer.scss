@@ -1,0 +1,63 @@
+@use '../../styles/mixins.scss' as *;
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include respond(tablet) {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+    position: absolute;
+    top: 10%;
+    background-color: var(--bg-secondary);
+    width: 100%;
+    display: none;
+    z-index: 10;
+  }
+
+  a {
+    color: var(--white);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  a:hover {
+    color: var(--bg-secondary);
+  }
+}
+
+.footer__top {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 180px;
+}
+
+.footer__bottom {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.footer__top-text {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__bottom-text {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}

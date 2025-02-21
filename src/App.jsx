@@ -1,8 +1,10 @@
 import AboutUs from './sections/AboutUs/AboutUs';
+import Footer from './sections/Footer/Footer';
 import Header from './sections/Header/Header';
 import Hero from './sections/Hero/Hero';
 import Numbers from './sections/Numbers/Numbers';
 import PastTransactions from './sections/PastTransactions/PastTransactions';
+// import Tariffs from './sections/Tariffs/Tariffs';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Numbers />
       <PastTransactions />
       <AboutUs />
+      {/* <Tariffs /> */}
+      <Footer />
     </>
   );
 }

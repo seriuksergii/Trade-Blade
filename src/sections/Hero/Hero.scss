@@ -17,6 +17,10 @@
       flex-direction: column;
       gap: 33px;
     }
+
+    @include respond(tablet) {
+      gap: 4rem;
+    }
   }
 
   &__left {
@@ -29,10 +33,12 @@
   &__b-line {
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
 
     @include respond(phone) {
-      width: 60%;
+      width: 70%;
+      
     }
   }
 
@@ -49,6 +55,11 @@
       font-size: 35px;
       line-height: 44px;
     }
+
+    @include respond(tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
 
   &__desc {
@@ -58,6 +69,10 @@
     line-height: 20px;
     color: var(--color-secondary);
     padding-bottom: 24px;
+
+    @include respond(tablet) {
+      font-size: 14px;
+    }
   }
 
   &__freeuse {
@@ -68,27 +83,25 @@
     color: var(--color-white);
     padding-top: 12px;
     padding-bottom: 134px;
+
+    @include respond(tablet) {
+      padding-bottom: 80px;
+    }
   }
 
   &__input {
     display: flex;
     align-items: center;
     width: 500px;
-    
     border-radius: 4px;
 
     @include respond(phone) {
       width: 400px;
     }
-  }
 
-  &__email {
-    flex: 1;
-    background: transparent;
-    padding: 25px 16px;
-    border: none;
-    text-transform: uppercase;
-    color: var(--color-white);
+    @include respond(tablet) {
+      width: 450px;
+    }
   }
 
   &__button {
@@ -105,14 +118,10 @@
     margin-right: 5px;
     cursor: pointer;
     border-radius: 4px;
-  }
 
-  &__button:hover {
-    border: 1.5px solid #57e1ff;
-    background: #57e1ff33;
-    color: #57e1ff;
-    box-shadow: 0px 0px 4px 0px #57e1ff;
-    transition: all 0.3s ease;
+    @include respond(tablet) {
+      padding: 14px 20px;
+    }
   }
 
   &__right {

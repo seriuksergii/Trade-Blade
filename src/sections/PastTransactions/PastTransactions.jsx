@@ -1,6 +1,6 @@
 import CustomSlider from '../../components/Slider/Slider';
 import './PastTransactions.scss';
-import bottomLine from '../../assets/bottomline.svg';
+// import bottomLine from '../../assets/bottomline.svg';
 
 const PastTransactions = () => {
   return (
@@ -13,7 +13,7 @@ const PastTransactions = () => {
         </div>
         <CustomSlider />
       </div>
-      <img src={bottomLine} alt="line" className="transactions__b-line" />
+      {/* <img src={bottomLine} alt="line" className="transactions__b-line" /> */}
     </section>
   );
 };
