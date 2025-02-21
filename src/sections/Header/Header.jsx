@@ -1,7 +1,7 @@
 import './Header.scss';
 import { IoIosMenu, IoMdClose } from 'react-icons/io';
 import { useState } from 'react';
-import Logo from '../../assets/logo.svg';
+import Logo from '/logo.svg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -50,16 +50,12 @@ const CustomSlider = () => {
       <Slider {...settings}>
         {cards.map((card) => (
           <div key={card.id} className="slider-card" data-aos="flip-left">
-            <img
-              src="/src/assets/log.svg"
-              alt="log"
-              className="card-background"
-            />
+            <img src="/log.svg" alt="log" className="card-background" />
             <p className="card_title">{card.title}</p>
             <p className="card_description">{card.description}</p>
             <p className="card_text">{card.text}</p>
             <p className="card_percent">
-              {card.percent} <img src="/src/assets/arrow.svg" alt="arrow" />
+              {card.percent} <img src="/arrow.svg" alt="arrow" />
             </p>
             <div className="card-footer">
               <p className="card_goal">{card.goal}</p>

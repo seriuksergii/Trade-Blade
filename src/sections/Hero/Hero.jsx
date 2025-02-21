@@ -1,6 +1,6 @@
 import './Hero.scss';
-import hero from '../../assets/hero.png';
-import bottomLine from '../../assets/bottomline.svg';
+import hero from '/hero.png';
+import bottomLine from '/bottomline.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
