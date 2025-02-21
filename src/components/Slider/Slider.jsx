@@ -9,7 +9,7 @@ const CustomSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    fetch('/src/data/cards.json')
+    fetch('/data/cards.json')
       .then((response) => response.json())
       .then((data) => setCards(data))
       .catch((error) => console.error('Ошибка загрузки', error));
