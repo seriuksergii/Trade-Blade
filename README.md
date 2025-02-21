@@ -1,6 +1,7 @@
 Check out the live demo
 
-[Demo](https://seriuksergii.github.io/react-todo/)
+[Demo](trade-blade-chi.vercel.app
+)
 
 Installation
 
